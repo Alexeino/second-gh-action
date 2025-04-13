@@ -1,5 +1,5 @@
 name: Unit Tests & Deploy
-on: push # Runs whenver a commit is pushed
+on: [push,workflow_dispatch] # Runs whenver a commit is pushed & allow manually dispatch too
 jobs:
   tests:
     runs-on: ubuntu-latest
